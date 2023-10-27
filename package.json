@@ -13,8 +13,8 @@
     "morgan": "^1.10.0",
     "pug": "^3.0.2"
   },
+  "description": "Iam Sri Vasavi.\r This is my webapps assignment repo.",
   "main": "app.js",
   "author": "sri vasu",
-  "license": "ISC",
-  "description": ""
+  "license": "ISC"
 }
