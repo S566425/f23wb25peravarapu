@@ -4,4 +4,16 @@ block content
   h1= title
   p Welcome to #{title}
   p This is index pug page.
-  button(type="button", class="btn btn-secondary") Press Me  for Contents
+  button(type="button", class="btn btn-secondary" onclick="goFaster()") Press Me  for Contents
+
+
+  div(id="faster") MPH mph change chnage.
+
+  script 
+    let mph=20;
+    let change=1;
+    function goFaster () 
+      mph=mph+change
+      change=change+1
+    
+    
