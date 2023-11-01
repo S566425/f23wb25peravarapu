@@ -4,19 +4,19 @@ block content
   h1= title
   p Welcome to #{title}
   p This is index pug page.
-  button(type="button", class="btn btn-secondary") Press Me  for Contents
+  button(type="button", class="btn btn-secondary",onclick='goFaster()') Press Me  for Contents
   <br>
   <br>
-  button(type="button", class="btn btn-secondary",id="faster",onclick='goFaster()') Increase the speed
-  //div(id="faster") Mph #{mph} change #{change}
-
-  script 
-    - var mph=20;
-    - var change=1;
-    function goFaster() 
-      - mph=mph+change
-      - change=change+1
-  
-
-  div(id="faster") Mph #{mph} change #{change}  
+  //button(type="button", class="btn btn-dark btn-sm",id="faster",onclick='goFaster()') Increase the speed
+  div(id='faster') Increase the speed
+  script. 
+    var mph=20;
+    var change=1;
+    function goFaster(){ 
+      mph=mph+change;
+      change=change+1;
+      //div(id="faster") MPH #{mph} with change #{change}
+      document.getElementById('faster').innerHTML=`MPH ${mph} with change ${change}`
+    }
+     
     
